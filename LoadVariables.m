@@ -119,7 +119,7 @@ for i = intNumber:intTotal + 1
 end
 logConfirm = false;
 for k = 1:intTotal
-    k = findobj('Tag', ['stLFileName' num2str(k)]);
+    k = findobj('Tag', ['stLFileName' num2str(k)]); %#ok<FXSET>
     if k.Visible == true
         logConfirm = true;
         break;
